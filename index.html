@@ -1,49 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <title>Toronto Star</title>
-    <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css" />
-    <body>
-    
+<div class="home">
 
-        <div class="wrapper">
-            <nav>
-                <ul>
-                    <li>jessie</li>
-                    <li>about</li>
-                    <li>contact</li>
-                </ul>
-            </nav>
-            <!-- intro -->
-            <section class="wrap ">
-                <p>jw</p>
-            </section>
-            <!-- about -->
-            <section class="wrap">
-                <div class="contents">
-                    <p></p>
-                </div>
-                <div class="contents">
-                    <h1>designer, developer</h1>
-                </div>
-                <div class="contents">
-                    <p>currently: the toronto star</p>
-                </div>
-            </section>
-            <!-- work -->
-            <section class="wrap"></section>
-            <!-- contact -->
-            <section class="wrap"></section>
-            <section class="wrap"></section>
-        </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="scripts/js.js"></script>
-    </body>
-</html>
-<!-- <script src="https://spreadsheets.google.com/feeds/list/ KEY /1/public/values?alt=json-in-script&callback=getJson"></script> -->
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
