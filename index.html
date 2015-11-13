@@ -4,18 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Toronto Star</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css" />
 
     <body>
         <div class="wrapper">
-            <section class="wrap"></section>
+            <header class="wrap intro">
+                <h1></h1>
+                <p></p>
+            </header>
+            <section class="wrap quiz-fixed quiz-counter">
+                <ul></ul>
+            </section>
+            <section class="wrap quiz-fixed quiz-timer">
+                <p></p>
+            </section>
+            <ul class="quiz_by_category">
+                <li data-category="#">one</li>
+                <li data-category="#">two</li>
+            </ul>
+            <section class="wrap quiz-content"></section>
+
+            <section class="wrap quiz-score">
+                <p></p>
+                <li class="share facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.thestar.com/" target="_blank">Facebook</a>
+                </li>
+                <li class="share twitter"><a href="http://www.thestar.com/" target="_blank" rel="nofollow">Twitter</a></li>
+            </section>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="scripts/js.js"></script>
-        <script src="https://spreadsheets.google.com/feeds/list/ KEY /1/public/values?alt=json-in-script&callback=getJson"></script>
+        <!-- load in differenct script file based on user input -->
+        <!-- <script src="scripts/quiz.js"></script> -->
+        <script src="scripts/categories-quiz.js"></script>
+        <script src="https://spreadsheets.google.com/feeds/list/1GcU5zAsbMFAM3lcYjSUuFlHTRzG5hPNxCssuc-NoWlk/1/public/values?alt=json-in-script&callback=getJson"></script>
     </body>
 
 </html>

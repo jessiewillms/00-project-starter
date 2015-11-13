@@ -1,22 +1,32 @@
 $body: 'Open Sans', Arial, sans-serif;
-$hed: "Raleway", Georgia;
+$hed: "Lora", Georgia, serif;
 
-$lg: #999;
-$g: #a1a1a1;
-$dg: #333;
+$lg: #e6e6e6;
+$g: #757575;
+$dg: #333333;
 
 $w: #fff;
 
+$c: #0062a1;
+$c2: #64cdf5;
 
-$c: #16a085;
 
-
-$b: 2px solid #eee;
-$tb: 2px solid tomato;
-
+$b: 1px solid $lg;
+$tb: 2px solid #c02722;
 
 $p: 3%;
 $m: 10px;
+$sm: 3px;
 
+$fw-light: 300;
 $fw-reg: 400;
 $fw-bold:  600;
+
+body {
+	font-size: 1em;
+}
+
+$fs-sm: 1em * .95;
+$fs-reg: 16px;
+$fs-lg: 26px;
+$fs-xl: 34px;

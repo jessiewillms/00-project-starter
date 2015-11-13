@@ -1,9 +1,10 @@
 // --------------------------- global CSS
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 body {
@@ -11,23 +12,15 @@ body {
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .wrapper {
-    max-width: 300px;
-   	width: 100%;
-    padding: 3px;
+    width: 100%;
 }
 
 .cf:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.active {
-	background-color: #E8E8E8;
-	color: $w;
-	transition: background-color 0.35s ease-in;
+    content: "";
+    display: table;
+    clear: both;
 }
