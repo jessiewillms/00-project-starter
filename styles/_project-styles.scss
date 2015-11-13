@@ -2,6 +2,11 @@
 .wrap {
     width: 100%;
     padding: $m;
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
 }
 // intro
 header.intro {
@@ -65,6 +70,7 @@ header.intro {
     }
 }
 .hint_wrap {
+    display: none;
     width: 100%;
 
     text-align: right;
@@ -118,8 +124,8 @@ header.intro {
 .quiz-fixed  {
     display: none;
 }
-.quiz-wrap{
-    display: none;
+.quiz-wrap {
+    // display: none;
     // visibility: hidden;
 }
 .quiz_by_category li {
@@ -147,6 +153,12 @@ header.intro {
     border: 10px solid #36454F;
 }
 
+.img-as-answer-wrap {
+    max-height: 100px;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+}
 
 
 
