@@ -12,7 +12,7 @@ var jshint = require('gulp-jshint'),
 
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('js/*.js')
+    return gulp.src('scripts/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -30,7 +30,7 @@ gulp.task('css-task', function() {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
     .pipe(gulp.dest('styles'))
-    .pipe(notify('No errors, high fives!'))
+    .pipe(notify('No errors, high fives!'));
 });
 
 // Concatenate & Minify JS

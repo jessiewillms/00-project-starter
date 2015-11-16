@@ -1,25 +1,26 @@
 .quiz-fixed {
     position: fixed;
+    z-index: 99;
     width: 50%;
     float: left;
     top: 0;
-
-    height: 40px;
-    background: snow; //TEMP REMOVE
-    ul li.dot {
-        display: inline-block;
-        float: left;
-
-        width: 20px;
-        height: 20px;
-        margin: 0 $sm;
-
-        border: $b;
-        border-radius: 50%;
-        background: transparent;
-        &.counter-completed {
-            border: 2px solid $c;
-            background: $c;
+    background: $w;
+    padding: $m;
+    border-bottom: $b;
+    ul {
+        float: right;
+        li.dot {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin: 0 $sm;
+            border: $b;
+            border-radius: 50%;
+            background: transparent;
+            &.counter-completed {
+                border: 2px solid $c;
+                background: $c;
+            }
         }
     }
 }
@@ -27,6 +28,32 @@
 .quiz-timer {
     left: 0;
 }
+
 .quiz-counter {
     right: 0;
+}
+.ten-seconds-left span {
+    font-weight: $fw-light;
+    color: $incorrect;
+}
+
+.five-seconds-left span {
+    font-weight: $fw-bold;
+    color: darken($incorrect, 10)
+}
+
+.no-seconds-left {
+    font-weight: $fw-extra-bold;
+   color: darken($incorrect, 10);
+}
+
+@media (max-width: 415px) {
+
+    .quiz-fixed {
+        width: 100%;
+        top: 0;
+    }
+    .quiz-counter {
+        display: none;
+    }
 }

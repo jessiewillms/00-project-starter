@@ -1,19 +1,25 @@
-    .hint_wrap {
-        text-align: right;
-		background: lighten($lg, $lighten);
-        button {
-        	padding: 5px;
-        	background: lighten($lg, $lighten);
-        	border: $b;
-        	border-radius: $sm;
-        	margin-right: 3px;
-        }
-        .hint-text {
-        	text-align: left;
-        	padding: 5% 10%;
-        }
-        p:not(.hint-text) {
-            cursor: pointer;
-            color: $c;
-        }
+.hint_wrap {
+    text-align: right;
+    button {
+        margin-right: 3px;
+        padding: 5px;
+        border: $b;
+        border-radius: $sm;
+        background: lighten($lg, $lighten);
     }
+    .hint-text {
+        padding: 5% 10%;
+        text-align: left;
+    }
+    p:not(.hint-text) {
+        cursor: pointer;
+        color: $c;
+    }
+}
+
+@media (max-width: 415px) {
+    .hint_wrap button {
+        display: block;
+        margin: $m auto 0;
+    }
+}

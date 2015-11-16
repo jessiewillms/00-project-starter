@@ -1,0 +1,27 @@
+.quiz-score {
+	padding: $m;
+
+	.share-wrap {
+		max-width: 50%;
+		display: block;
+		margin: 0 auto;
+		padding: $m;
+		p, ul {
+			text-align: center;
+		}
+		p {
+			font-weight: $fw-bold;
+		}
+		li {
+			border: $b;
+			padding: $m;
+			margin: $sm 0;
+			display: block;
+			a {
+				text-decoration: none;
+				font-weight: $fw-extra-bold;
+				color: $dg;
+			}
+		}
+	}
+}
