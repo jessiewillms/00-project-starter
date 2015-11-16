@@ -1,4 +1,4 @@
-$body: 'Open Sans', Arial, sans-serif;
+$body: 'Merriweather', Arial, sans-serif;
 $hed: "Lora", Georgia, serif;
 
 $lg: #e6e6e6;
@@ -10,8 +10,14 @@ $w: #fff;
 $c: #0062a1;
 $c2: #64cdf5;
 
+$incorrect: #e74c3c;
+$correct: #2ecc71;
 
-$b: 1px solid $lg;
+$lighten: 10;
+$darken:20;
+
+
+$b: 2px solid $lg;
 $tb: 2px solid #c02722;
 
 $p: 3%;
@@ -26,7 +32,9 @@ body {
 	font-size: 1em;
 }
 
+$opacity: .5;
+
 $fs-sm: 1em * .95;
 $fs-reg: 16px;
-$fs-lg: 26px;
+$fs-lg: 22px;
 $fs-xl: 34px;
