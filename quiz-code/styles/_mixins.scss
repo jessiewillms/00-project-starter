@@ -1,0 +1,31 @@
+@mixin testing {
+	width: 540px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid tomato;
+}
+
+@mixin t {
+	-webkit-transition: background-color 0.35s ease-in;
+	-moz-transition: background-color 0.35s ease-in;
+	transition: background-color 0
+}
+ @mixin active {
+    background-color: $lg;
+    color: $w;
+    @include t;
+}
+
+@mixin button($c) {
+	background-color: $c;
+	border: 1px solid mix($dg, $c, 25%);
+	border-radius: $p;
+	padding: $p;
+
+	&:hover {
+		cursor: pointer;
+		background-color: mix($dg, $c, 15%);
+		border-color: mix($dg, $c, 40%);
+	}
+}
+

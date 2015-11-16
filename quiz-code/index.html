@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toronto Star</title>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900,900italic,700italic,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <body>
+        <div class="wrapper cf">
+            <header class="wrap intro">
+                <h1></h1>
+                <p></p>
+            </header>
+            <section class="wrap quiz-fixed hide-contents quiz-counter">
+                <ul></ul>
+            </section>
+            <section class="wrap quiz-fixed hide-contents quiz-timer">
+                <p></p>
+            </section>
+            <section class="wrap quiz-content"></section>
+            <section class="wrap quiz-score hide-contents">
+                <h2></h2>
+                <p>Share your score:</p>
+                <li class="share facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.thestar.com/" target="_blank">Facebook</a>
+                </li>
+                <li class="share twitter"><a href="http://www.thestar.com/" target="_blank" rel="nofollow">Twitter</a></li>
+            </section>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- load in differenct script file based on user input -->
+        <script src="scripts/quiz.js"></script>
+        <!-- <script src="scripts/categories-quiz.js"></script> -->
+        <script>
+        // compile sheet URL
+        var quiz_by_category_text = '<ul class="quiz_by_category"><li data-category="#">one</li><li data-category="#">two</li></ul>';
+        var img_as_ans = "1NWHGEZaQbypcKmJhIJa2Hf_Z21-UzpakV42AKGQkj0c",
+            true_false = "1yGpEizvkSwybcYkrDbrAsedk2OU9Jah6ZRk8Dcnw3ds",
+            categories = "1GcU5zAsbMFAM3lcYjSUuFlHTRzG5hPNxCssuc-NoWlk",
+            multiple_choice = "1tqY9XW9nb6zdeTPI4VZ9ox90qM_pxDZV5s7Y_z3bjUo";
+
+        var fullUrl = window.location.href,
+            sheetID = // location.search.substring(1);
+            urlStart = 'https://spreadsheets.google.com/feeds/list/',
+            urlEnd = '/1/public/values?alt=json-in-script&callback=getJson';
+
+        document.write("<script src=" + urlStart + multiple_choice + urlEnd + "><\/script>");
+        </script>
+    </body>
+
+</html>
